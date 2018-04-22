@@ -1,0 +1,15 @@
+{
+  "name": "DomainRank",
+  "author": "Ilya Glotov, Rostelecom CERT",
+  "license": "AGPL-V3",
+  "url": "https://github.com/ilyaglow/go-cortex-analyzers/analyzers/Dor",
+  "version": "1.0",
+  "description": "Check a domain against Dor service (https://github.com/ilyaglow/dor)",
+  "dataTypeList": ["domain"],
+  "baseConfig": "DomainRank",
+  "command": "Dor/dor",
+  "config": {
+      "check_tlp": false,
+      "max_tlp": 3
+  }
+}
