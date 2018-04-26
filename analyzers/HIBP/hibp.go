@@ -37,8 +37,13 @@ func main() {
 		cortex.SayError(i, err.Error())
 	}
 
-	r := report{
-		Results: []result{*br, *pr},
+	r := report{}
+	if br != nil {
+		r.Results = append(r.Results, *br)
+	}
+
+	if pr != nil {
+		r.Results = append(r.Results, *pr)
 	}
 	cortex.SayReport(r, append(btxs, ptxs...))
 }
