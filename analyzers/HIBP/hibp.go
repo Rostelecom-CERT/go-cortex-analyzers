@@ -15,7 +15,9 @@ const (
 	apiv2Pastes   = "https://haveibeenpwned.com/api/v2/pasteaccount/"
 )
 
-type report []*result
+type report struct {
+	Results []result `json:"results"`
+}
 
 type result []interface{}
 
@@ -35,7 +37,10 @@ func main() {
 		cortex.SayError(i, err.Error())
 	}
 
-	cortex.SayReport(report{br, pr}, append(btxs, ptxs...))
+	r := report{
+		Results: []result{*br, *pr},
+	}
+	cortex.SayReport(r, append(btxs, ptxs...))
 }
 
 func getBreaches(acc string) (*result, []cortex.Taxonomy, error) {
