@@ -1,0 +1,11 @@
+{
+  "name": "HaveIBeenPwned",
+  "author": "Ilya Glotov, Rostelecom CERT",
+  "license": "AGPL-V3",
+  "url": "https://github.com/ilyaglow/go-cortex-analyzers/analyzers/HIBP",
+  "version": "1.0",
+  "description": "Check an email against haveibeenpwned.com service (breaches and pastes)",
+  "dataTypeList": ["mail"],
+  "baseConfig": "HIBP",
+  "command": "HIBP/hibp"
+}
