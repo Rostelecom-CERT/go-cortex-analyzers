@@ -6,7 +6,8 @@ This repo contains sources for [Cortex-Analyzers](https://github.com/TheHive-Pro
 ## List of analyzers
 
 * [Dor](https://github.com/ilyaglow/dor) analyzer - domank ranking
-* HaveIBeenPwned analyzer - check an email for breaches and pastes
+* [HaveIBeenPwned](https://haveibeenpwned.com) analyzer - check an email for breaches and pastes
+* [HackedEmails](https://hacked-emails.com) analyzer - check an email for breaches and pastes, sometimes better, sometimes worse than hibp
 
 ## How to build
 
