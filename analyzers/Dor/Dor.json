@@ -6,10 +6,19 @@
   "version": "1.0",
   "description": "Check a domain against Dor service (https://github.com/ilyaglow/dor)",
   "dataTypeList": ["domain"],
-  "baseConfig": "DomainRank",
+  "baseConfig": "Dor",
   "command": "Dor/dor",
   "config": {
       "check_tlp": false,
       "max_tlp": 3
-  }
+  },
+  "configurationItems": [
+    {
+      "name": "url",
+      "description": "Dor service URL",
+      "type": "string",
+      "multi": false,
+      "required": true
+    }
+  ]
 }

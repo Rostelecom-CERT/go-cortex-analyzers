@@ -7,5 +7,9 @@
   "description": "Check an email against haveibeenpwned.com service (breaches and pastes)",
   "dataTypeList": ["mail"],
   "baseConfig": "HIBP",
-  "command": "HIBP/hibp"
+  "command": "HIBP/hibp",
+  "config": {
+      "check_tlp": false,
+      "max_tlp": 1
+  }
 }
