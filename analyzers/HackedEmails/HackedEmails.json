@@ -9,7 +9,7 @@
   "baseConfig": "HackedEmails",
   "command": "HackedEmails/he",
   "config": {
-      "check_tlp": false,
+      "check_tlp": true,
       "max_tlp": 1
   }
 }

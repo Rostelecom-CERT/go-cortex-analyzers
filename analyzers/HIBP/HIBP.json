@@ -9,7 +9,7 @@
   "baseConfig": "HIBP",
   "command": "HIBP/hibp",
   "config": {
-      "check_tlp": false,
+      "check_tlp": true,
       "max_tlp": 1
   }
 }
