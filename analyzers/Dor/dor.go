@@ -45,10 +45,17 @@ func main() {
 			txs = append(txs, cortex.Taxonomy{
 				Namespace: namespace,
 				Predicate: rep.Hits[i].Source,
-				Level:     "info",
+				Level:     cortex.TxInfo,
 				Value:     strconv.FormatInt(int64(rep.Hits[i].GetRank()), 10),
 			})
 		}
+	} else {
+		txs = append(txs, cortex.Taxonomy{
+			Namespace: namespace,
+			Predicate: "Report",
+			Level:     cortex.TxSuspicious,
+			Value:     "unranked",
+		})
 	}
 
 	// Report accept marshallable struct and taxonomies

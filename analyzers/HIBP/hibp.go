@@ -63,7 +63,7 @@ func getBreaches(acc string) (*result, []cortex.Taxonomy, error) {
 		txs = append(txs, cortex.Taxonomy{
 			Namespace: namespace,
 			Predicate: predicate,
-			Level:     "safe",
+			Level:     cortex.TxSafe,
 			Value:     "0",
 		})
 		return nil, txs, nil
@@ -77,7 +77,7 @@ func getBreaches(acc string) (*result, []cortex.Taxonomy, error) {
 		txs = append(txs, cortex.Taxonomy{
 			Namespace: namespace,
 			Predicate: predicate,
-			Level:     "suspicious",
+			Level:     cortex.TxSuspicious,
 			Value:     strconv.FormatInt(int64(len(r)), 10),
 		})
 
@@ -93,7 +93,7 @@ func getBreaches(acc string) (*result, []cortex.Taxonomy, error) {
 		txs = append(txs, cortex.Taxonomy{
 			Namespace: namespace,
 			Predicate: predicate,
-			Level:     "suspicious",
+			Level:     cortex.TxSuspicious,
 			Value:     strconv.FormatInt(int64(vf), 10),
 		})
 
@@ -118,7 +118,7 @@ func getPastes(acc string) (*result, []cortex.Taxonomy, error) {
 		txs = append(txs, cortex.Taxonomy{
 			Namespace: namespace,
 			Predicate: predicate,
-			Level:     "safe",
+			Level:     cortex.TxSafe,
 			Value:     "0",
 		})
 		return nil, txs, nil
@@ -132,7 +132,7 @@ func getPastes(acc string) (*result, []cortex.Taxonomy, error) {
 		txs = append(txs, cortex.Taxonomy{
 			Namespace: namespace,
 			Predicate: predicate,
-			Level:     "suspicious",
+			Level:     cortex.TxSuspicious,
 			Value:     strconv.FormatInt(int64(len(r)), 10),
 		})
 
