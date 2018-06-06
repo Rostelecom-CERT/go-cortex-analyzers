@@ -1,0 +1,31 @@
+{
+  "name": "Dummy",
+  "author": "Ilya Glotov, Rostelecom CERT",
+  "license": "AGPL-V3",
+  "url": "https://github.com/ilyaglow/go-cortex-analyzers/analyzers/Dummy",
+  "version": "1.0",
+  "description": "Dummy analyzer is used for debugging purposes",
+  "dataTypeList": ["ip", "file", "other"],
+  "baseConfig": "Dummy",
+  "command": "Dummy/dummy",
+  "config": {
+      "check_tlp": false,
+      "max_tlp": 3
+  },
+  "configurationItems": [
+    {
+      "name": "param1",
+      "description": "Dummy string parameter",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "param2",
+      "description": "Dummy int parameter",
+      "type": "int",
+      "multi": false,
+      "required": false
+    }
+  ]
+}
