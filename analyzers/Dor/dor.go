@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/ilyaglow/dor"
-	"github.com/ilyaglow/go-cortex"
+	"gopkg.ilya.app/ilyaglow/go-cortex.v1"
 )
 
 type dorResponse struct {

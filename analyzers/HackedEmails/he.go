@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	cortex "github.com/ilyaglow/go-cortex"
+	"gopkg.ilya.app/ilyaglow/go-cortex.v1"
 )
 
 const (
