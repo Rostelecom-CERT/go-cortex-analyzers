@@ -8,6 +8,7 @@ This repo contains sources for [Cortex-Analyzers](https://github.com/TheHive-Pro
 * [Dor](https://github.com/ilyaglow/dor) analyzer - domank ranking
 * [HaveIBeenPwned](https://haveibeenpwned.com) analyzer - check an email for breaches and pastes
 * [HackedEmails](https://hacked-emails.com) analyzer - check an email for breaches and pastes, sometimes better, sometimes worse than hibp
+* [BadPackets](https://mirai.badpackets.net) analzyer - check if IP address has been seen in Mirai-like Botnet list by badpackets.net
 
 ## How to build
 

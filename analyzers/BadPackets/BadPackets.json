@@ -1,0 +1,11 @@
+{
+  "name": "BadPackets",
+  "author": "Ilya Glotov, Rostelecom CERT",
+  "license": "AGPL-V3",
+  "url": "https://mirai.badpackets.net",
+  "version": "1.0",
+  "description": "Check an IP address against Mirai BadPackets service IPs tracker",
+  "dataTypeList": ["ip"],
+  "baseConfig": "BadPackets",
+  "command": "BadPackets/badpackets"
+}
