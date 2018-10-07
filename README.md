@@ -18,7 +18,7 @@ If you have Go installed on your host you can use a simple make command:
 make
 ```
 
-If you don't, no worries:
+You can also use docker to make builds:
 ```
 make docker-build
 ```
