@@ -10,8 +10,6 @@ in Go
 * [Dor](https://github.com/ilyaglow/dor) analyzer - domain ranking.
 * [HaveIBeenPwned](https://haveibeenpwned.com) analyzer - check an email for
 breaches and pastes.
-* [HackedEmails](https://hacked-emails.com) analyzer - check an email for
-breaches and pastes (more pastebin leaks than HIBP has).
 * [BadPackets](https://mirai.badpackets.net) analyzer - check an IP address
 presence in Mirai alike Botnet list by badpackets.net.
 
